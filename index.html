@@ -14,9 +14,9 @@
     <div class="header">
         <nav>
             <ul>
-                <li><a href="home/">Home</a></li>
-                <li><a href="portfolio/">Portfolio</a></li>
-                <li><a href="contact/">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -59,36 +59,85 @@
         </div>
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <h1>Projects</h1>
         <div class="projects">
             <div class="project">
-                <h1>Project Name</h1>
-                <img src="http://via.placeholder.com/200" alt="Project Image">
+                <h1>Pokemon Stay</h1>
+                <a href="https://kcgilland143.github.io/pokemon-stay/">
+                    <img src="images/PokemonStay.jpg" alt="Pokemon Stay">
+                </a>
                 <p class="project-description">
-                    project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam reprehenderit iste quidem molestias nobis repellendus, adipisci eius pariatur minima!
+                    A Pokemon GeoLocation game for the web. 
+                    Sign in, scroll the map to find, fight, and capture Pokemon!
+                    Built with Jquery and Firebase.
                 </p>
             </div>
             <div class="project">
-                    <h1>Project Name</h1>
-                    <img src="http://via.placeholder.com/200" alt="Project Image">
-                    <p class="project-description">
-                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam reprehenderit iste quidem molestias nobis repellendus, adipisci eius pariatur minima!
-                    </p>
+                <h1>LetzQuiz</h1>
+                <a href="https://infinite-savannah-67815.herokuapp.com/">
+                    <img src="images/LetzQuiz.jpg" alt="LetzQuiz">
+                </a>
+                <p class="project-description">
+                    A Definition/Word Study App for the web.
+                    without signing in, View and Search for collections of terms, and play
+                    multiple memorization games.  
+                    Sign in to create and manage your own collections.
+                    Built with ReactJS, ExpressJS, and MongoDB. Deployed on Heroku. 
+                </p>
             </div>
             <div class="project">
-                    <h1>Project Name</h1>
-                    <img src="http://via.placeholder.com/200" alt="Project Image">
-                    <p class="project-description">
-                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam reprehenderit iste quidem molestias nobis repellendus, adipisci eius pariatur minima!
-                    </p>
-                </div>
+                <h1>Game of Life</h1>
+                <a href="kcgilland143.github.io/game-of=life/">
+                    <img src="images/Game-of-Life.jpg" alt="Game of Life">
+                </a>
+                <p class="project-description">
+                    A front-end only project, An adaptation of Conway's Game of Life
+                    Built from stratch with browser JavaScript and Canvas API.
+                </p>
+            </div>
+            <div class="project">
+                <h1>Tech Circles</h1>
+                <a href="kcgilland143.github.io/SVG-Circles">
+                    <img src="images/Tech-Circles.jpg" alt="Tech Circles">
+                </a>
+                <p class="project-description">
+                    A front-end only project, A collection of animations based on Circles.
+                    The First is a set of circles stepped down along the radius of a larger circle.
+                    The Second, my original inspiration for this project, a set of Randomly generated "Pipes"
+                    that rotate along the axis of a larger circle, as seen on this page's header.
+                    Finally, A clock created with forementioned "Pipes". The outside ring completes 
+                    once each second, containing hour, minute, and second hands based on system time. 
+                    Click to Pause/Play each animation.
+                    Built from stratch with browser JavaScript and SVG.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="callToAction">
-        <p>It's time to realize your dreams</p>
-    </div>
+    <aside id="contact" class="connect">
+        <h1>Connect with Me</h1>
+        <div class="centered-min">
+            <a href="https://www.linkedin.com/in/kevin-gilland-a76418147/" 
+                target="_blank">
+                <img src="images/if_linkedin-logo-1_1269935.png" 
+                alt="Linkedin">
+            </a>
+            <a href="https://github.com/kcgilland143" target="_blank">
+                <img src="images/if_GitHub_alt_367585.png" alt="Github">
+            </a>
+            <a href="https://stackoverflow.com/users/story/8458470#" 
+                target="_blank">
+                <img src="images/if_stackoverflow_rounded_394191.png" alt="StackOverflow">
+            </a>
+            <div class="contact-info">
+                <ul>
+                    <li><span class="bold">Email:</span><a href="mailto://kev.gilland93@gmail.com">kev.gilland@fakemail.com</a></li>
+                    <li><span class="bold">Phone: </span><a href="tel:1-336-264-1493">336-264-1493</a> </li>
+                </ul>
+            </div>
+        </div>      
+      </aside>  
     
 </body>
 

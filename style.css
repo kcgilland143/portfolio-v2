@@ -184,7 +184,7 @@ svg path {
     font-size: 12px;
 }
 
-.toolkit-container h1, .portfolio > h1 {
+.toolkit-container h1, .portfolio > h1, .connect h1 {
     color: var(--clr-primary);
     margin: 0.5em;
     padding-bottom: 0.5em;
@@ -233,7 +233,7 @@ svg path {
     animation: transform 3s infinite 0s linear;
 }
 
-.portfolio {
+.portfolio, .connect {
     font-size: 12px;
     margin: 0.5em;
 }
@@ -251,10 +251,14 @@ svg path {
     transition: flex-grow 0.5s ease-in-out,
         font-size 0.5s ease-in-out;
     padding: 1em;
+    box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .project h1 {
     margin: 0 0.5em 0.5em 0.5em; 
+}
+.project img {
+    border-radius: 1em;
 }
 
 .project .project-description {
@@ -275,6 +279,37 @@ svg path {
 
 .project:hover .project-description {
     display: inline-block;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+.centered-min {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-min a {
+    margin: 0 1em;
+    transition: transform 0.25s 0s ease-in, opacity 0.25s 0s linear;
+}
+
+.centered-min a:hover {
+    transform: scale(0.8);
+    opacity: 0.5
+}
+
+.bold {
+    font-weight: bold;
 }
 
 @keyframes FlySmush{
