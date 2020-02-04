@@ -179,6 +179,12 @@ svg path {
     justify-content: space-around;
 }
 
+.project img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
 .toolkit-container {
     margin: 0 0 2em 0;
     font-size: 12px;
@@ -261,10 +267,36 @@ svg path {
     border-radius: 1em;
 }
 
+
 .project .project-description {
     display: none;
     margin: 0.5em;
     padding: 1em;
+}
+
+.project button {
+    color: var(--clr-primary);
+    background-color: var(--clr-tertiary);
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: none;
+}
+
+.project a {
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+.project a:hover button {
+    box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.3),
+        inset -2px -2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.project a:visited {
+    border: none;
 }
 
 .project img {
@@ -277,8 +309,14 @@ svg path {
     box-shadow: inset -2px -2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
+.project:hover button {
+    display: block;
+    animation: slideIn 0.75s 0s ease-out;
+}
+
 .project:hover .project-description {
     display: inline-block;
+    animation: upFade 0.5s 0s ease-out;
 }
 
 .contact-info ul {
@@ -294,11 +332,12 @@ svg path {
 .centered-min {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.centered-min a {
+.connect a {
     margin: 0 1em;
     transition: transform 0.25s 0s ease-in, opacity 0.25s 0s linear;
 }
